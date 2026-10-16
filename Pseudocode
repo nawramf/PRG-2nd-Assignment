@@ -1,0 +1,23 @@
+Algorithm FindPrimes
+Input: startValue, endValue
+Output: List of prime numbers between startValue and endValue inclusive
+
+1. Read startValue, endValue
+2. For i from startValue to endValue do
+3.     If i <= 1 then
+4.         Skip to next i (not prime)
+5.     End If
+6.     
+7.     Set isPrime to true
+8.     For j from 2 to sqrt(i) do
+9.         If i modulo j == 0 then
+10.            Set isPrime to false
+11.            Break loop
+12.        End If
+13.    End For
+14.    
+15.    If isPrime == true then
+16.        Print i
+17.    End If
+18. End For
+End Algorithm
